@@ -1,0 +1,4 @@
+C:\Users\Theary\OneDrive\Source\bootcamp\C#\WordCounter.Solution\WordCounter.Tests\obj\Debug\netcoreapp2.1\WordCounterTests.csprojAssemblyReference.cache
+C:\Users\Theary\OneDrive\Source\bootcamp\C#\WordCounter.Solution\WordCounter.Tests\obj\Debug\netcoreapp2.1\WordCounterTests.csproj.CoreCompileInputs.cache
+C:\Users\Theary\OneDrive\Source\bootcamp\C#\WordCounter.Solution\WordCounter.Tests\obj\Debug\netcoreapp2.1\WordCounterTests.AssemblyInfoInputs.cache
+C:\Users\Theary\OneDrive\Source\bootcamp\C#\WordCounter.Solution\WordCounter.Tests\obj\Debug\netcoreapp2.1\WordCounterTests.AssemblyInfo.cs

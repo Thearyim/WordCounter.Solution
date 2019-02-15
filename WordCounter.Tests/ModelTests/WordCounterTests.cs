@@ -1,18 +1,18 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using WordCount;
+using WordCount.Models;
 
-namespace WordCounter.Tests
+namespace WordCount.Tests
 {
     [TestClass]
-    public class WordCountTest
+    public class WordCounterTest
     {
 
       [TestMethod]
-      public void GetWordCount_WordWithLetterA_True()
+      public void GetWordCount_WordCounted_True()
       {
-        // ScrabbleScore testScrabbleScore = new ScrabbleScore();
-        // int result = testScrabbleScore.GetScrabbleScore("A");
-        // Assert.AreEqual(1, result);
+        WordCounter testWordCounter = new WordCounter();
+        int result = testWordCounter.GetWordCount("put the garbage out for the garbage truck");
+        Assert.AreEqual(put:1, the:2, garbage:2, result);
       }
     }
 }

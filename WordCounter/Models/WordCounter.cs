@@ -1,6 +1,6 @@
 using System.Collections.Generic;
 
-namespace WordCount
+namespace WordCount.Models
 {
   public class WordCounter
   {
@@ -21,6 +21,7 @@ namespace WordCount
       //(StringCompare.OrdinalIgnorCase)
 
       //split sentence into strings of words
+      //remove space between words
       string[] words = sentence.Split(StringSplitOption.RemoveEmptyEntries)
 
       //forEach word in words
