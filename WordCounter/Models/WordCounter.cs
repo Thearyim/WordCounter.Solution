@@ -21,7 +21,7 @@ namespace WordCount
       //(StringCompare.OrdinalIgnorCase)
 
       //split sentence into strings of words
-      string[] words = sentence.Split(stringSplitOption.RemoveEmptyEntries)
+      string[] words = sentence.Split(StringSplitOption.RemoveEmptyEntries)
 
       //forEach word in words
       wordLc = word.ToLower()
