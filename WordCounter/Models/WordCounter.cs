@@ -14,21 +14,22 @@ namespace WordCount.Models
       //garbage: 2
       //put: 2
 
-      ContainsKey(string);
-      sentence =;
+
       //create a dictionary which takes in strings and int
       Dictionary<string, int> wordDictionary = new Dictionary<string, int>();
       //(StringCompare.OrdinalIgnorCase)
 
+      //ContainsKey(string);
+      sentence;
       //split sentence into strings of words
       //remove space between words
-      string[] words = sentence.Split(StringSplitOption.RemoveEmptyEntries)
+      string[] words = sentence.Split(StringSplitOption.RemoveEmptyEntries);
 
       //forEach word in words
-      wordLc = word.ToLower()
-      if dictionary.ContainsKey(wordLc)
+      string wordLc = word.ToLower();
+      if wordDictionary.GetWordCount(wordLc)
       {
-        dictionary[wordLc]++;
+        Dictionary[wordLc]++;
       }
       else
       {
