@@ -27,17 +27,17 @@ namespace WordCount.Models
 
       //forEach word in words
       string wordLc = word.ToLower();
-      if wordDictionary.GetWordCount(wordLc)
+      if (wordDictionary.GetWordCount(wordLc))
       {
-        Dictionary[wordLc]++;
+        wordDictionary[wordLc]++;
       }
       else
       {
-        dictionary.Add(wordLc, 1)
+        wordDictionary.Add(wordLc, 1);
       }
 
       //KeyValuePair<string, int>
-      forEach(var entry in dictionary)
+      forEach (var entry in wordDictionary)
       {
         Output entry.Key(word)Count;
       }
