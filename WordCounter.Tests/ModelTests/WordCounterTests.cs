@@ -26,5 +26,15 @@ namespace WordCount.Tests
         Assert.AreEqual(2, result["the"]);
         Assert.AreEqual(2, result["garbage"]);
       }
+
+      [TestMethod]
+      public void GetWordCount_HandlesExtraWhiteSpace()
+      {
+        WordCounter testWordCounter = new WordCounter();
+        Dictionary<string, int> result = testWordCounter.GetWordCount("Put  the garbage out for the  Garbage Truck.");
+        Assert.AreEqual(1, result["put"]);
+        Assert.AreEqual(2, result["the"]);
+        Assert.AreEqual(2, result["garbage"]);
+      }
     }
 }
