@@ -4,7 +4,7 @@ namespace WordCount.Models
 {
   public class WordCounter
   {
-    public string GetWordCount(string word)
+    public string GetWordCount(string sentence)
     {
       //gathers both a word and sentence from a user
       //then checks how frequently the word appears
@@ -19,29 +19,27 @@ namespace WordCount.Models
       Dictionary<string, int> wordDictionary = new Dictionary<string, int>();
       //(StringCompare.OrdinalIgnorCase)
 
-      //ContainsKey(string);
-      sentence;
+
       //split sentence into strings of words
       //remove space between words
-      string[] words = sentence.Split(StringSplitOption.RemoveEmptyEntries);
+      char[] wordDelimiters = new char[]{''};
+      string[] words = sentence.Split(wordDelimiters,StringSplitOptions.RemoveEmptyEntries);
 
       //forEach word in words
-      string wordLc = word.ToLower();
-      if (wordDictionary.GetWordCount(wordLc))
+      foreach(string word in words)
       {
-        wordDictionary[wordLc]++;
-      }
-      else
-      {
-        wordDictionary.Add(wordLc, 1);
-      }
-
-      //KeyValuePair<string, int>
-      forEach (var entry in wordDictionary)
-      {
-        Output entry.Key(word)Count;
+        string wordLc = word.ToLower();
+        if (wordDictionary.ContainsKey(wordLc))
+        {
+          wordDictionary[wordLc]++;
+        }
+        else
+        {
+          wordDictionary.Add(wordLc, 1);
+        }
       }
 
+      return wordDictionary;
     }
   }
 }
