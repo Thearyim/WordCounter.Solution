@@ -1,4 +1,5 @@
 using Microsoft.VisualStudio.TestTools.UnitTesting;
+using System.Collections.Generic;
 using WordCount.Models;
 
 namespace WordCount.Tests
@@ -6,13 +7,14 @@ namespace WordCount.Tests
     [TestClass]
     public class WordCounterTest
     {
-
       [TestMethod]
       public void GetWordCount_WordCounted_True()
       {
         WordCounter testWordCounter = new WordCounter();
-        int result = testWordCounter.GetWordCount("put the garbage out for the garbage truck");
-        Assert.AreEqual(put:1, the:2, garbage:2, result);
+        Dictionary<string, int> result = testWordCounter.GetWordCount("put the garbage out for the garbage truck");
+        Assert.AreEqual(1, result["put"]);
+        Assert.AreEqual(2, result["the"]);
+        Assert.AreEqual(2, result["garbage"]);
       }
     }
 }

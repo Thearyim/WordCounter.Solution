@@ -2,3 +2,16 @@ C:\Users\Theary\OneDrive\Source\bootcamp\C#\WordCounter.Solution\WordCounter.Tes
 C:\Users\Theary\OneDrive\Source\bootcamp\C#\WordCounter.Solution\WordCounter.Tests\obj\Debug\netcoreapp2.1\WordCounterTests.csproj.CoreCompileInputs.cache
 C:\Users\Theary\OneDrive\Source\bootcamp\C#\WordCounter.Solution\WordCounter.Tests\obj\Debug\netcoreapp2.1\WordCounterTests.AssemblyInfoInputs.cache
 C:\Users\Theary\OneDrive\Source\bootcamp\C#\WordCounter.Solution\WordCounter.Tests\obj\Debug\netcoreapp2.1\WordCounterTests.AssemblyInfo.cs
+C:\Users\Theary\OneDrive\Source\bootcamp\C#\WordCounter.Solution\WordCounter.Tests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTest.TestAdapter.dll
+C:\Users\Theary\OneDrive\Source\bootcamp\C#\WordCounter.Solution\WordCounter.Tests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
+C:\Users\Theary\OneDrive\Source\bootcamp\C#\WordCounter.Solution\WordCounter.Tests\bin\Debug\netcoreapp2.1\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
+C:\Users\Theary\OneDrive\Source\bootcamp\C#\WordCounter.Solution\WordCounter.Tests\bin\Debug\netcoreapp2.1\WordCounterTests.deps.json
+C:\Users\Theary\OneDrive\Source\bootcamp\C#\WordCounter.Solution\WordCounter.Tests\bin\Debug\netcoreapp2.1\WordCounterTests.runtimeconfig.json
+C:\Users\Theary\OneDrive\Source\bootcamp\C#\WordCounter.Solution\WordCounter.Tests\bin\Debug\netcoreapp2.1\WordCounterTests.runtimeconfig.dev.json
+C:\Users\Theary\OneDrive\Source\bootcamp\C#\WordCounter.Solution\WordCounter.Tests\bin\Debug\netcoreapp2.1\WordCounterTests.dll
+C:\Users\Theary\OneDrive\Source\bootcamp\C#\WordCounter.Solution\WordCounter.Tests\bin\Debug\netcoreapp2.1\WordCounterTests.pdb
+C:\Users\Theary\OneDrive\Source\bootcamp\C#\WordCounter.Solution\WordCounter.Tests\bin\Debug\netcoreapp2.1\WordCounter.dll
+C:\Users\Theary\OneDrive\Source\bootcamp\C#\WordCounter.Solution\WordCounter.Tests\bin\Debug\netcoreapp2.1\WordCounter.pdb
+C:\Users\Theary\OneDrive\Source\bootcamp\C#\WordCounter.Solution\WordCounter.Tests\obj\Debug\netcoreapp2.1\WordCounterTests.csproj.CopyComplete
+C:\Users\Theary\OneDrive\Source\bootcamp\C#\WordCounter.Solution\WordCounter.Tests\obj\Debug\netcoreapp2.1\WordCounterTests.dll
+C:\Users\Theary\OneDrive\Source\bootcamp\C#\WordCounter.Solution\WordCounter.Tests\obj\Debug\netcoreapp2.1\WordCounterTests.pdb
