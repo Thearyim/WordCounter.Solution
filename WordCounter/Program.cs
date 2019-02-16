@@ -4,7 +4,6 @@ using WordCount.Models;
 
 namespace WordCount
 {
-
   public class Program
   {
     public static void Main()
