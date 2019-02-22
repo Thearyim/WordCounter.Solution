@@ -15,7 +15,7 @@
       In the sentence "Find the phone number in the phonebook", the word "phone" will matched 2 times.
       <br/>
 2. Wordmatches are not case-sensitive.<br/>
-   
+
 
 
 ## Technologies Used
