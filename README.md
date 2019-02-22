@@ -11,10 +11,16 @@
 
 ## Specs
 1. Words that have the same exact letters are consider a match.<br/>
-     _Examples:_
-      In the sentence "Find the phone number in the phonebook", the word "phone" will matched 2 times.
+    _Example:_
+      In the sentence "The phone company has a new phone coming out this week.", the word "phone" will matched 2 times.
       <br/>
+2. Wordmatches only match complete full word.<br/>
+    _Example:_
+      The phone company phones the clients in the phonebook to advertise the new phone.
 2. Wordmatches are not case-sensitive.<br/>
+    _Example:_
+3. Wordmatches handles extra white space.<br/>
+    _Example:_
 
 
 
