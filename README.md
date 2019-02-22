@@ -9,11 +9,14 @@
 ## Description
 **_This is an application that gathers both a word and sentence from a user, then checks how frequently the word appears in the sentence._**
 
-| Example Input                             | Example Output               |                                                                                                         
-| :---------------------------------------- | :-------------------------- |
-| Put the garbage out for the garbage truck.| the: 2                      |
-|                                           | garbage: 2                  |
-|                                           | put: 2                      |
+## Specs
+1. Words that have the same exact letters are consider a match.<br/>
+     _Examples:_
+      In the sentence "Find the phone number in the phonebook", the word "phone" will matched 2 times.
+      <br/>
+2. Wordmatches are not case-sensitive.<br/>
+   
+
 
 ## Technologies Used
 * _HTML_
