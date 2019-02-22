@@ -5,7 +5,13 @@ namespace WordCount.Models
 {
   public class WordCounter
   {
-    public Dictionary<string, int> GetWordCount(string sentence)
+    private string wordText;
+
+    public WordCounter(string text)
+    {
+      this.wordText = text;
+    }
+    public string GetWordCount()
     {
       //gathers both a word and sentence from a user
       //then checks how frequently the word appears
@@ -16,7 +22,8 @@ namespace WordCount.Models
       //put: 2
 
       //create a dictionary which takes in strings and int
-      Dictionary<string, int> wordDictionary = new Dictionary<string, int>();
+      string wordCountString = "";
+      Dictionary<string, int> wordCounts = new Dictionary<string, int>();
 
       //split sentence into strings of words
       //remove space between words
@@ -24,9 +31,10 @@ namespace WordCount.Models
       string[] words = sentence.Split(wordDelimiters, StringSplitOptions.RemoveEmptyEntries);
 
       //forEach word in words
-      foreach(string word in words)
+      foreach(var entry in wordCounts)
       {
         string wordLc = word.ToLower();
+        wordCountString += $"{entry.Key}: {entry.Value}<br/>";
         if (wordDictionary.ContainsKey(wordLc))
         {
           wordDictionary[wordLc]++;
@@ -37,7 +45,7 @@ namespace WordCount.Models
         }
       }
 
-      return wordDictionary;
+      return wordCountString;
     }
   }
 }

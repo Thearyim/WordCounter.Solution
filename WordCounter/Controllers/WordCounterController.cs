@@ -20,11 +20,13 @@ namespace WordCount.Controllers
     }
 
     [HttpPost("/wordcount")]
-    public ActionResult Create(string wordDictionary)
+    public ActionResult Create(string text)
     {
 
-      WordCount myWordCount = new WordCount(wordDictionary);
-      return View("Index", myWordCount);
+      WordCounter myWordCount = new WordCounter();
+      Dictionary<string, int> wordCount = myWordCount.GetWordCount(text);
+
+      return View("Index", wordCount);
     }
   }
 }
