@@ -24,9 +24,9 @@ namespace WordCount.Controllers
     {
 
       WordCounter myWordCount = new WordCounter(text);
-      string wordCountText = myWordCount.GetWordCount();
+      // string wordCountText = myWordCount.GetWordCount();
 
-      return View("Index", wordCountText);
+      return View("Index", myWordCount);
     }
   }
 }

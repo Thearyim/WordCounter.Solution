@@ -8,13 +8,16 @@ namespace WordCount
 {
   public class Program
   {
-    public static void Main()
+    public static void Main(string[] args)
     {
-      Console.WriteLine("Please enter any sentences and have the words counted: ");
-      string userText = Console.ReadLine();
-      WordCounter wordCounter = new WordCounter(userText);
-      string result = wordCounter.GetWordCount();
-      Console.WriteLine("WordCounted:" + result);
+      var host = new WebHostBuilder()
+        .UseKestrel()
+        .UseContentRoot(Directory.GetCurrentDirectory())
+        .UseIISIntegration()
+        .UseStartup<Startup>()
+        .Build();
+
+      host.Run();
     }
   }
 }

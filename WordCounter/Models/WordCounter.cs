@@ -39,7 +39,7 @@ namespace WordCount.Models
 
       foreach (var entry in wordCounts)
       {
-        wordCountString += $"{entry.Key}: {entry.Value}<br/>";
+        wordCountString += $"{entry.Key}: {entry.Value}";
       }
 
       return wordCountString;
