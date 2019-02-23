@@ -13,13 +13,6 @@ namespace WordCount.Models
     }
     public string GetWordCount()
     {
-      //gathers both a word and sentence from a user
-      //then checks how frequently the word appears
-      //in the sentence
-      //i.e. Put the garbage out for the garbage truck
-      //the: 2
-      //garbage: 2
-      //put: 2
 
       //create a dictionary which takes in strings and int
       string wordCountString = "";
@@ -28,21 +21,25 @@ namespace WordCount.Models
       //split sentence into strings of words
       //remove space between words
       char[] wordDelimiters = new char[]{' '};
-      string[] words = sentence.Split(wordDelimiters, StringSplitOptions.RemoveEmptyEntries);
+      string[] words = this.wordText.Split(wordDelimiters, StringSplitOptions.RemoveEmptyEntries);
 
       //forEach word in words
-      foreach(var entry in wordCounts)
+      foreach(string word in words)
       {
         string wordLc = word.ToLower();
-        wordCountString += $"{entry.Key}: {entry.Value}<br/>";
-        if (wordDictionary.ContainsKey(wordLc))
+        if (wordCounts.ContainsKey(wordLc))
         {
-          wordDictionary[wordLc]++;
+          wordCounts[wordLc]++;
         }
         else
         {
-          wordDictionary.Add(wordLc, 1);
+          wordCounts.Add(wordLc, 1);
         }
+      }
+
+      foreach (var entry in wordCounts)
+      {
+        wordCountString += $"{entry.Key}: {entry.Value}<br/>";
       }
 
       return wordCountString;

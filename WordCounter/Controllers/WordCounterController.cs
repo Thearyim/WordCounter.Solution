@@ -23,10 +23,10 @@ namespace WordCount.Controllers
     public ActionResult Create(string text)
     {
 
-      WordCounter myWordCount = new WordCounter();
-      Dictionary<string, int> wordCount = myWordCount.GetWordCount(text);
+      WordCounter myWordCount = new WordCounter(text);
+      string wordCountText = myWordCount.GetWordCount();
 
-      return View("Index", wordCount);
+      return View("Index", wordCountText);
     }
   }
 }

@@ -12,9 +12,9 @@ namespace WordCount
     {
       Console.WriteLine("Please enter any sentences and have the words counted: ");
       string userText = Console.ReadLine();
-      WordCounter wordCounter = new WordCounter();
-      Dictionary<string, int> result = wordCounter.GetWordCount(userText);
-      Console.WriteLine("WordCounted: " + result);
+      WordCounter wordCounter = new WordCounter(userText);
+      string result = wordCounter.GetWordCount();
+      Console.WriteLine("WordCounted:" + result);
     }
   }
 }

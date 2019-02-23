@@ -7,3 +7,5 @@ C:\Users\Theary\OneDrive\Source\bootcamp\C#\WordCounter.Solution\WordCounter\bin
 C:\Users\Theary\OneDrive\Source\bootcamp\C#\WordCounter.Solution\WordCounter\bin\Debug\netcoreapp2.1\WordCounter.pdb
 C:\Users\Theary\OneDrive\Source\bootcamp\C#\WordCounter.Solution\WordCounter\obj\Debug\netcoreapp2.1\WordCounter.dll
 C:\Users\Theary\OneDrive\Source\bootcamp\C#\WordCounter.Solution\WordCounter\obj\Debug\netcoreapp2.1\WordCounter.pdb
+C:\Users\Theary\OneDrive\Source\bootcamp\C#\WordCounter.Solution\WordCounter\bin\Debug\netcoreapp2.1\WordCounter.runtimeconfig.json
+C:\Users\Theary\OneDrive\Source\bootcamp\C#\WordCounter.Solution\WordCounter\bin\Debug\netcoreapp2.1\WordCounter.runtimeconfig.dev.json
