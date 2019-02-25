@@ -1,4 +1,5 @@
 @using WordCount.Models;
 
 <h1>Word Counter</h1>
-<p>Result: @Model.GetWordCount()</p>
+<h3>Result:</h3>
+<p> @Html.Raw(@Model.GetWordCountHtml())</p>

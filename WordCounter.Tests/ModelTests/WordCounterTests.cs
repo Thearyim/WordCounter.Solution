@@ -10,8 +10,20 @@ namespace WordCount.Tests
       [TestMethod]
       public void GetWordCount_WordCounted_True()
       {
-        WordCounter testWordCounter = new WordCounter();
-        Dictionary<string, int> result = testWordCounter.GetWordCount("put the garbage out for the garbage truck");
+        string text = "put the garbage out for the garbage truck";
+        WordCounter testWordCounter = new WordCounter(text);
+        Dictionary<string, int> result = testWordCounter.GetWordCount();
+        Assert.AreEqual(1, result["put"]);
+        Assert.AreEqual(2, result["the"]);
+        Assert.AreEqual(2, result["garbage"]);
+      }
+
+      [TestMethod]
+      public void GetWordCount_WordCountedFullWordOnly_True()
+      {
+        string text = "put the garbage along with other garbages out for the garbage truck";
+        WordCounter testWordCounter = new WordCounter(text);
+        Dictionary<string, int> result = testWordCounter.GetWordCount();
         Assert.AreEqual(1, result["put"]);
         Assert.AreEqual(2, result["the"]);
         Assert.AreEqual(2, result["garbage"]);
@@ -20,8 +32,9 @@ namespace WordCount.Tests
       [TestMethod]
       public void GetWordCount_IsNotCaseSensitive()
       {
-        WordCounter testWordCounter = new WordCounter();
-        Dictionary<string, int> result = testWordCounter.GetWordCount("Put the garbage out for the Garbage Truck.");
+        string text = "Put the garbage out for the Garbage Truck.";
+        WordCounter testWordCounter = new WordCounter(text);
+        Dictionary<string, int> result = testWordCounter.GetWordCount();
         Assert.AreEqual(1, result["put"]);
         Assert.AreEqual(2, result["the"]);
         Assert.AreEqual(2, result["garbage"]);
@@ -30,11 +43,30 @@ namespace WordCount.Tests
       [TestMethod]
       public void GetWordCount_HandlesExtraWhiteSpace()
       {
-        WordCounter testWordCounter = new WordCounter();
-        Dictionary<string, int> result = testWordCounter.GetWordCount("Put  the garbage out for the  Garbage Truck.");
+        string text = "Put the garbage  out for the Garbage Truck.";
+        WordCounter testWordCounter = new WordCounter(text);
+        Dictionary<string, int> result = testWordCounter.GetWordCount();
         Assert.AreEqual(1, result["put"]);
         Assert.AreEqual(2, result["the"]);
         Assert.AreEqual(2, result["garbage"]);
+      }
+
+      [TestMethod]
+      public void GetWordCountHtml_FormatsTextWithASingleWordCorrectly()
+      {
+        string text = "garbage";
+        WordCounter testWordCounter = new WordCounter(text);
+        string result = testWordCounter.GetWordCountHtml();
+        Assert.AreEqual("garbage: 1<br/>", result);
+      }
+
+      [TestMethod]
+      public void GetWordCountHtml_FormatsTextWithMultipleWordsCorrectly()
+      {
+        string text = "garbage truck";
+        WordCounter testWordCounter = new WordCounter(text);
+        string result = testWordCounter.GetWordCountHtml();
+        Assert.AreEqual("garbage: 1<br/>truck: 1<br/>", result);
       }
     }
 }

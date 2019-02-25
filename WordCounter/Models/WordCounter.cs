@@ -11,11 +11,9 @@ namespace WordCount.Models
     {
       this.wordText = text;
     }
-    public string GetWordCount()
-    {
 
-      //create a dictionary which takes in strings and int
-      string wordCountString = "";
+    public Dictionary<string, int> GetWordCount()
+    {
       Dictionary<string, int> wordCounts = new Dictionary<string, int>();
 
       //split sentence into strings of words
@@ -37,9 +35,17 @@ namespace WordCount.Models
         }
       }
 
+      return wordCounts;
+    }
+
+    public string GetWordCountHtml()
+    {
+      //create a dictionary which takes in strings and int
+      string wordCountString = "";
+      Dictionary<string, int> wordCounts = this.GetWordCount();
       foreach (var entry in wordCounts)
       {
-        wordCountString += $"{entry.Key}: {entry.Value}";
+        wordCountString += $"{entry.Key}: {entry.Value}<br/>";
       }
 
       return wordCountString;
